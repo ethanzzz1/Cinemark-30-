@@ -12,7 +12,7 @@ const clientsSchema = new Schema({
         unique: true,
         match:[
             /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,6}$/,
-            "Por favor ingrese un correo electronico valido", //validar el correo electronico
+            "Por favor ingrese un correo electronico valido", 
         ],
     },
 
@@ -38,7 +38,6 @@ const clientsSchema = new Schema({
     },
 },
 {
-    //tabla auditoria PRO
     timestamps: true,
     strict: false
 })
